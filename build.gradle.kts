@@ -13,8 +13,8 @@ repositories {
 }
 
 dependencies {
-    // https://mvnrepository.com/artifact/info.solidsoft.gradle.pitest/gradle-pitest-plugin
     implementation("info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.15.0")
+    implementation("org.pitest:pitest-junit5-plugin:1.2.1")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.3")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.10.3")
@@ -25,9 +25,6 @@ dependencies {
     testImplementation("org.junit.platform:junit-platform-commons:1.10.3")
     testImplementation("org.junit.platform:junit-platform-engine:1.10.3")
     testImplementation("org.junit.platform:junit-platform-suite-api:1.10.3")
-
-    // PIT JUnit 5 plugin
-    testImplementation("org.pitest:pitest-junit5-plugin:0.15")
 
 }
 
